@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.18.1/dist/bootstrap-table.min.js"></script>
+  
+</head>
+
+<body>
+  <h1>Meine Verkehrsverbindung zur HTL Grieskirchen</h1>
+
+  <input id="plz_input" placeholder="PLZ des Wohnorts eingeben" onchange="">
+
+  <table id="table" data-toggle="table" data-url="zufahrt.json">
+    <thead>
+      <tr>
+        <th data-field="startstation"></th>
+        <th data-field="startzeit"></th>
+        <th data-field="endstation"></th>
+        <th data-field="endzeit"></th>
+
+      </tr>
+    </thead>
+  </table>
+</body>
+
+</html>
