@@ -14,14 +14,28 @@
 
   <input id="plz_input" placeholder="PLZ des Wohnorts eingeben" onchange="">
 
-  <table id="table" data-toggle="table" data-url="zufahrt.json">
+  <h3>Hinfahrt</h2>
+  <table id="table" data-toggle="table" data-url="hinfahrt.php">
     <thead>
       <tr>
-        <th data-field="startstation"></th>
-        <th data-field="startzeit"></th>
-        <th data-field="endstation"></th>
-        <th data-field="endzeit"></th>
+        <th data-field="start_station"></th>
+        <th data-field="start_time"></th>
+        <th data-field="end_station"></th>
+        <th data-field="end_time"></th>
+        <th data-field="lines_used"></th>
+      </tr>
+    </thead>
+  </table>
 
+  <h3>Rueckfahrt</h2>
+  <table id="table" data-toggle="table" data-url="rueckfahrt.php">
+    <thead>
+      <tr>
+        <th data-field="start_station"></th>
+        <th data-field="start_time"></th>
+        <th data-field="end_station"></th>
+        <th data-field="end_time"></th>
+        <th data-field="lines_used"></th>
       </tr>
     </thead>
   </table>
